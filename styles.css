@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #0B071C;
+}
+#header {
+    height: 95px;
+    width: 100%;
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2px;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+#header h1 {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+#input {
+    height: 42px;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    border: solid 2px blue;
+    border-radius: 25px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+#header input {
+    height: 45px;
+    width: 80%;
+    color: #fff;
+    background-color: transparent;
+    font-size: 17px;
+    font-weight: 550;
+    padding-left: 5px;
+}
+#header input::placeholder {
+    color: #fff;
+}
+#header button {
+  color: #fff;
+  background-color: transparent;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18%;
+  border-radius: 20px;
+  border: none;
+}
+#results {
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    border-radius: 20px;
+    background-color: #0B071C;
+    margin-top: 150px;
+    overflow: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.res {
+    height: auto;
+    min-height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.result-item {
+    height: auto;
+    width: 92%;
+    display: block;
+    overflow: hidden;
+    overflow-y: scroll;
+    color: #fff;
+    background-color: #0B071C;
+    border: solid 2px #fff;
+    margin: 5%;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#img {
+    height: 100%;
+    width: 100%;
+}
+#footer {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #fff;
+    background-color: #000;
+    position: fixed;
+    left: 0%;
+    bottom: 0%;
+    overflow: hidden;
+}
+#footer button {
+    height: 40px;
+    width: 50%;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#modal {
+ height: 100%;
+ width: 100%;
+ color: #fff;
+ background-color: #000;
+ position: fixed;
+ top: 0%;
+ left: 0%;
+ display: none;
+}
+#modal.active {
+    display: block;
+}
